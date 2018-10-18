@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "Trello Background Changer",
+    "version": "1.0",
+    "description": "Your choice background color for mood.",
+    "icons": {
+        "128": "128.png",
+        "48": "48.png",
+        "16": "16.png"
+    },
+    "content_scripts": [{
+        "matches": ["http://*/*", "https://*/*"],
+        "css": ["popup.css"],
+        "js": ["jquery.min.js", "popup.js"]
+    }]
+}
